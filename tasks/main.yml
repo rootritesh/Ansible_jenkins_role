@@ -1,5 +1,5 @@
 ---
 # tasks file for jenkins
 - name: using rehl8 file
-  include_tasks: rehl8.yml
+  include_tasks: rehl.yml
   when: ansible_os_family == 'RedHat'
