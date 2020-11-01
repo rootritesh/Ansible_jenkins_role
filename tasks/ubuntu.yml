@@ -15,7 +15,7 @@
 
 - name: updating
   apt:
-    update_caches: yes
+    update_cache: yes
 
 - name: install jenkins
   apt:
