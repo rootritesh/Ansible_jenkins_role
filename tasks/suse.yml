@@ -1,0 +1,22 @@
+- name: installing java
+  zypper:
+    name: "{{ java8_zypper  }}"
+    state: present
+
+- name: jenkins repo
+  zypper_repository:
+    name: jenkins
+    repo: "{{ jenkins_repo_zypper  }}"
+    state: present
+
+- name: install jenkins
+  zypper:
+    name: jenkins
+    state: present
+
+- name: starting jenkins
+  service:
+    name: jenkins
+    state: started
+  
+
