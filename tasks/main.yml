@@ -12,4 +12,7 @@
   include_tasks: ubuntu.yml
   when: ansible_distribution == "Ubuntu"
 
+- name: using fedora file
+  include_tasks: ubuntu.yml
+  when: ansible_distribution == "Fedora"
 
