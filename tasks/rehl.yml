@@ -2,23 +2,23 @@
   yum_repository:
     name: epel
     description: EPEL YUM repo
-    baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+    baseurl: "{{ epel_url }}" 
 
 - name: installing java
   yum:
-    name: java-1.8.0
+    name: "{{ java8_rpm }}"
     state: present
 
 - name: add jenkins key
   rpm_key:
     state: present
-    key: https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    key: "{{ jenkins_key_rpm }}"
 
 - name: jenkins repo
   yum_repository:
     name: jenkins
     description: jenkins for rehl
-    baseurl: https://pkg.jenkins.io/redhat-stable/
+    baseurl: "{{ jenkins_repo_yum }}"
     gpgcheck: yes
 
 - name: install jenkins

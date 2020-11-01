@@ -1,2 +1,15 @@
 ---
 # vars file for jenkins
+
+#vars for RPM based
+epel_url: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+java8_rpm: java-1.8.0
+jenkins_key_rpm: https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+jenkins_repo_yum: https://pkg.jenkins.io/redhat-stable/
+
+#vars for Debian based
+java8_apt: openjdk-8-jre-headless
+Jenkins_key_deb: https://pkg.jenkins.io/debian-stable/jenkins.io.key
+jenkins_repo_deb: deb https://pkg.jenkins.io/debian-stable binary/
+        
+

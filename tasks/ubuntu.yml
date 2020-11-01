@@ -1,17 +1,17 @@
 - name: installing java
   apt:
-    name: openjdk-8-jre-headless
+    name: "{{ java8_apt  }}" 
     state: present
 
 - name: add jenkins key
   apt_key:
     state: present
-    url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
+    url: "{{ Jenkins_key_deb  }}"
 
 - name: add repo in sources.list
   lineinfile:
     path: /etc/apt/sources.list
-    line: deb https://pkg.jenkins.io/debian-stable binary/
+    line: "{{ jenkins_repo_deb  }}"
 
 - name: updating
   apt:
