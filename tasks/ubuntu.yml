@@ -1,0 +1,26 @@
+- name: installing java
+  yum:
+    name: openjdk-8-jre-headless
+    state: present
+
+- name: add jenkins key
+  apt_key:
+    state: present
+    url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
+
+- name: jenkins repo
+  apt_repository:
+    repo: https://pkg.jenkins.io/debian-stable binary/
+    state: present        
+
+- name: install jenkins
+  apt:
+    name: jenkins
+    state: present
+
+- name: starting jenkins
+  service:
+    name: jenkins
+    state: started
+    enabled: yes
+
