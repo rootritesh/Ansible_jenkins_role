@@ -8,10 +8,11 @@
     state: present
     url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
 
-- name: jenkins repo
-  apt_repository:
-    repo: https://pkg.jenkins.io/debian-stable binary/
-    state: present        
+- name: add repo in sources.list
+  lineinfile:
+    path: /etc/apt/sources.list
+    line: deb https://pkg.jenkins.io/debian-stable binary/
+
 
 - name: install jenkins
   apt:

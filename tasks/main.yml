@@ -8,4 +8,8 @@
   include_tasks: rehl.yml
   when: ansible_distribution == "CentOS"
 
+- name: using ubuntu file
+  include_tasks: ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+
 
