@@ -11,31 +11,32 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-#vars for RPM based
-epel_url: 
-java8_rpm
-jenkins_key_rpm
-jenkins_repo_yum
+# vars for RPM based
+* epel_url: 
+* java8_rpm
+* jenkins_key_rpm
+* jenkins_repo_yum
 
-#vars for Debian based
-java8_apt
-Jenkins_key_deb
-jenkins_repo_deb
+# vars for Debian based
+* java8_apt
+* Jenkins_key_deb
+* jenkins_repo_deb
 
 Supported OS
 --------------
-Redhat8
-Redhat7
-Centos8
-Centos7
-Ubuntu-20.04
-Ubuntu-18.04
-Ubuntu-16.04
-Fedora
+* Redhat8
+* Redhat7
+* Centos8
+* Centos7
+* Ubuntu-20.04
+* Ubuntu-18.04
+* Ubuntu-16.04
+* Fedora
 
 Dependencies
 ------------
-Ansible is installed
+* Python2 or Python3
+* Anisble
 
 Example Playbook
 ----------------
