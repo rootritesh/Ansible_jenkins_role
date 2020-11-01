@@ -12,7 +12,8 @@ java8_apt: openjdk-8-jre-headless
 Jenkins_key_deb: https://pkg.jenkins.io/debian-stable/jenkins.io.key
 jenkins_repo_deb: deb https://pkg.jenkins.io/debian-stable binary/
 
-#vars for FreeBSD
-java8_pkg=openjdk8
+#vars for Suse
+java8_zypper: java-1_8_0-openjdk
+jenkins_repo_zypper: https://pkg.jenkins.io/opensuse/
         
 
