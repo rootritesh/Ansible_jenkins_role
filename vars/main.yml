@@ -11,5 +11,8 @@ jenkins_repo_yum: https://pkg.jenkins.io/redhat-stable/
 java8_apt: openjdk-8-jre-headless
 Jenkins_key_deb: https://pkg.jenkins.io/debian-stable/jenkins.io.key
 jenkins_repo_deb: deb https://pkg.jenkins.io/debian-stable binary/
+
+#vars for FreeBSD
+java8_pkg=openjdk8
         
 

@@ -1,0 +1,16 @@
+- name: installing java
+  package:
+    name: "{{ java8_pkg  }}"
+    state: present
+
+- name: install jenkins
+  package:
+    name: jenkins
+    state: present
+
+- name: starting jenkins
+  service:
+    name: jenkins
+    state: started
+    enabled: yes
+
