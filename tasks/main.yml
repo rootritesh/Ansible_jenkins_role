@@ -16,7 +16,5 @@
   include_tasks: fedora.yml
   when: ansible_distribution == "Fedora"
 
-- name: using freebsd file
-  include_tasks: freebsd.yml
-  when: ansible_distribution == "FreeBSD"
+
 
