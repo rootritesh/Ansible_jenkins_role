@@ -1,5 +1,5 @@
 - name: installing java
-  yum:
+  apt:
     name: openjdk-8-jre-headless
     state: present
 
@@ -13,6 +13,9 @@
     path: /etc/apt/sources.list
     line: deb https://pkg.jenkins.io/debian-stable binary/
 
+- name: updating
+  apt:
+    update_caches: yes
 
 - name: install jenkins
   apt:
