@@ -36,7 +36,7 @@ Supported OS
 Dependencies
 ------------
 * Python2 or Python3
-* Anisble
+* Ansible
 
 Example Playbook
 ----------------
