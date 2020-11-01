@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+Configure the Jenkins
 
 Requirements
 ------------
@@ -22,6 +22,16 @@ java8_apt
 Jenkins_key_deb
 jenkins_repo_deb
 
+Supported OS
+--------------
+Redhat8
+Redhat7
+Centos8
+Centos7
+Ubuntu-20.04
+Ubuntu-18.04
+Ubuntu-16.04
+Fedora
 
 Dependencies
 ------------
@@ -37,6 +47,6 @@ Including an example of how to use your role (for instance, with variables passe
          - { role: username.rolename, x: 42 }
 
 
-Dependencies
+Detailed Explanation
 ------------
 [Detailed Explanation](https://rootritesh.medium.com/ansible-jenkins-role-58088247b4bd)
