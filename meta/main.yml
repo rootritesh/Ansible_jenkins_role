@@ -30,15 +30,7 @@ galaxy_info:
   platforms:
     - name: RedHat
       versions:
-      - all
-      - 7
-    - name: SomePlatform
-      versions:
-      - all
-      - 1.0
-      - 7
-      - 99.99
-
+        - any
   galaxy_tags: 
     - Jenkins
     - CI/CD
