@@ -29,9 +29,9 @@ galaxy_info:
   #
   platforms:
     - name: RedHat
-      versions:
-        - 8
-        - 7
+      # versions:
+      #   - 8
+      #   - 7
     - name: Centos
       versions:
         - 8
@@ -42,7 +42,7 @@ galaxy_info:
         - 18.04
         - 16.04
     - name: Fedora
-        
+
 
   galaxy_tags: 
     - jenkins
