@@ -30,17 +30,17 @@ galaxy_info:
   platforms:
     - name: RedHat
       versions:
-        - Guinness
-        - Psyche
+        - guinness
+        - psyche
     - name: CentOS
       # versions:
       #   - 7
       #   - 8
     - name: Ubuntu
       versions:
-        - Xenial Xerus
-        - Bionic Beaver
-        - Focal Fossa
+        - xenial Xerus
+        - bionic Beaver
+        - focal Fossa
     - name: Fedora
 
 
