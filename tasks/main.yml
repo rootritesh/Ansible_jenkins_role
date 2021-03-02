@@ -16,7 +16,6 @@
   include_tasks: fedora.yml
   when: ansible_distribution == "Fedora"
 
-- name: using suse file
-  include_tasks: suse.yml
-  when: ansible_distribution == "SUSE"
-
+# - name: using suse file
+#   include_tasks: suse.yml
+#   when: ansible_distribution == "SUSE"
