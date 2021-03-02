@@ -38,9 +38,9 @@ galaxy_info:
       #   - 8
     - name: Ubuntu
       versions:
-        - xenial Xerus
-        - bionic Beaver
-        - focal Fossa
+        - xenial
+        - bionic
+        - focal
     - name: Fedora
 
 
