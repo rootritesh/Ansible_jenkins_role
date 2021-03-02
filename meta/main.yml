@@ -30,7 +30,20 @@ galaxy_info:
   platforms:
     - name: RedHat
       versions:
-        - any
+        - 8
+        - 7
+    - name: Centos
+      versions:
+        - 8
+        - 7
+    - name: Ubuntu
+      versions:
+        - 20.04
+        - 18.04
+        - 16.04
+    - name: Fedora
+        
+
   galaxy_tags: 
     - jenkins
     # List tags for your role here, one per line. A tag is a keyword that describes
